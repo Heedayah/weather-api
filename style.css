@@ -1,0 +1,202 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+    background: #222;
+}
+
+.weather {
+    width: 390px;
+    height: 844px;
+    max-width: 470px;
+    background: white;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    word-wrap: break-word;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.backgroundhalf {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+}
+
+.backgroundhalf img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.statusBar {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 600px;
+}
+
+.statusBar img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.header {
+    position: absolute;
+    top: 47px; /* Adjust as needed */
+    width: 399px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.today-date {
+    flex: 1;
+    text-align: center;
+    font-size: 16px;
+    margin-right: 38px;
+}
+
+.backButton {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='48' d='M328 112L184 256l144 144'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+
+.weatherToday {
+    width: 275px;
+    position: absolute;
+    top: 108px; /* Adjust based on the desired position over the background */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    z-index: 1; /* Ensure it is above other elements */
+}
+
+.location {
+    font-size: 16px;
+}
+
+.current-temp {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.w-icon {
+    width: 120px !important; /* Adjust width */
+    height: 120px !important; /* Adjust height */
+    margin: auto; /* Reduced margin and centered horizontally */
+    margin-top: 10px;
+    display: block; /* Ensure block-level display */
+}
+
+.condition {
+    font-size: 16px;
+    margin: 10px;
+}
+
+.other {
+    width: 275px;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.forecast-text {
+    color: #3F414E;
+    margin: 20px;
+    margin-top: 15px;
+    margin-bottom: -1pc;
+    font-size: 12px;
+    font-weight: 400;
+    word-wrap: break-word;
+    text-align: left; /* Align text to the left */
+}
+
+.forecast {
+    width: 358px;
+    height: 298px;
+    flex-direction: column;
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 13px;
+    display: flex;
+    margin: auto; /* Center the forecast container */
+}
+
+.forecast-card {
+    width: 358px;
+    height: 44px;
+    background: #4E60A5;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px; /* Added padding for spacing */
+    color: white;
+}
+
+.forecast-card .day,
+.forecast-card .temp {
+    margin: 0 10px; /* Added margin for spacing */
+    font-size: 12px;
+}
+
+.f-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.footer {
+    width: 390px;
+    padding-top: 17px;
+    padding-bottom: 9px;
+    background: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    display: inline-flex;
+}
+
+.home-indicator {
+    width: 127px;
+    height: 5px;
+    background: black;
+    border-radius: 100px;
+}

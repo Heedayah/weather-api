@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Weather API</title>
+    </head>
+    
+<body>
+
+<div class="weather">
+    <div class="backgroundhalf">
+        <img src="images/backgroundHalf.png" alt="backgroundHalf">
+        <div class="statusBar">
+            <img src="images/statusBar.png" alt="statusBar">
+        </div>
+
+        <div class="header">
+            <span class="backButton" id="backButton"></span>
+            <div class="today-date">Monday, 20 May 2024</div>
+        </div>
+
+        <div class="weatherToday">
+            <div class="location">Skudai, Johor</div>
+            <div class="current-temp">22&#176;C</div>
+            <img src="images/sun-icon.png" alt="weather icon" class="w-icon">
+            <div class="condition">Sunny</div>
+            <div class="other">
+                <div class="weather-item">
+                    <div class="label">Humidity</div>
+                    <div class="value">94%</div>
+                </div>
+                <div class="weather-item">
+                    <div class="label">Wind Speed</div>
+                    <div class="value">3.2 km/h</div>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <div class="forecast-text">5-Day Forecast</div>
+
+    <div class="forecast">
+        <div class="forecast-card">
+            <div class="day">Tue</div>
+            <img src="images/sun-icon.png" alt="weather icon" class="f-icon">
+            <div class="temp">Day - 35.6&#176; C</div>
+            <div class="temp">Night - 25.6&#176; C</div>
+        </div>
+        <div class="forecast-card">
+            <div class="day">Wed</div>
+            <img src="images/sun-icon.png" alt="weather icon" class="f-icon">           
+            <div class="temp">Day - 35.6&#176; C</div>
+            <div class="temp">Night - 25.6&#176; C</div>
+        </div>
+        <div class="forecast-card">
+            <div class="day">Thur</div>
+            <img src="images/sun-icon.png" alt="weather icon" class="f-icon">           
+            <div class="temp">Day - 35.6&#176; C</div> 
+            <div class="temp">Night - 25.6&#176; C</div>
+        </div>
+        <div class="forecast-card">
+            <div class="day">Fri</div>
+            <img src="images/sun-icon.png" alt="weather icon" class="f-icon">           
+            <div class="temp">Day - 35.6&#176; C</div>
+            <div class="temp">Night - 25.6&#176; C</div>
+        </div>
+            <div class="forecast-card">
+            <div class="day">Sat</div>
+            <img src="images/sun-icon.png" alt="weather icon" class="f-icon">           
+            <div class="temp">Day - 35.6&#176; C</div>
+            <div class="temp">Night - 25.6&#176; C</div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="home-indicator"></div>
+    </div>
+    
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+<script src="main.js"></script>
+
+</body>
+</html>
