@@ -27,6 +27,12 @@ document.addEventListener('DOMContentLoaded', () => {
         return str.replace(/\b\w/g, char => char.toUpperCase());
     }
 
+    // Function to update today's date
+    function updateTodayDate() {
+        const today = moment().format('dddd, D MMMM YYYY');
+        document.getElementById('todayDate').textContent = today;
+    }
+
     // Function to fetch weather data based on latitude and longitude
     function fetchWeather(lat, lon) {
         fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`)
@@ -119,4 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
     backButton.addEventListener('click', () => {
         window.location.href = 'https://www.figma.com/proto/qdZu3kGqiyiSoPB7sLTUrc/prototype?page-id=109%3A553&node-id=482-2575&viewport=3223%2C1725%2C0.53&t=PVaA3adc7H7RlX5j-1&scaling=scale-down&starting-point-node-id=323%3A5415';
     });*/
+
+    // Update today's date
+    updateTodayDate();
 });
