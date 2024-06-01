@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //Back button interaction
     const backButton = document.getElementById('backButton');
     backButton.addEventListener('click', () => {
-        window.location.href = 'https://www.figma.com/proto/qdZu3kGqiyiSoPB7sLTUrc/prototype?page-id=109%3A553&node-id=482-2575&viewport=3223%2C1725%2C0.53&t=PVaA3adc7H7RlX5j-1&scaling=scale-down&starting-point-node-id=323%3A5415';
+        window.location.href = 'https://www.figma.com/proto/qdZu3kGqiyiSoPB7sLTUrc/prototype?page-id=109%3A553&node-id=491-4549&viewport=3223%2C1725%2C0.53&t=eEuM4sqM4VrzoEHW-1&scaling=scale-down&starting-point-node-id=323%3A5415';
     });
 
     // Update today's date
